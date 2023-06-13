@@ -11,7 +11,6 @@
     --color-black: #000000;
     --color-primary: #111111;
     --color-secondary: #151515;
-
     --bg-tint: #ffe300;
 }
 
@@ -45,7 +44,7 @@ body {
 /* Header */
 header {
     background-color: black;
-    background-image: url(./img/casas.png);
+    background-image: url(../img/casas.png);
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -186,11 +185,24 @@ header li a:hover::after {
     }
 }
 
-/* History section */
+/* Conteúdo geral */
+.trailer {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    margin: auto 2rem;
+}
 
-.history-section {
-    background-color: var(--color-primary);
-    scroll-margin-top: 4rem;
+.trailer h2 {
+    text-align: left;
+    color: var(--color-red-secondary);
+    font-family: cursive;
+    margin-bottom: 1rem;
+}
+
+.trailer img {
+    width: 100%;
+    border-radius: 0.5rem;
 }
 
 .titulos {
@@ -200,9 +212,8 @@ header li a:hover::after {
     color: var(--color-red-secondary);
     font-family: 'Berkshire Swash', cursive;
     font-size: 1.5rem;
-    gap: 30px;
     padding-top: 2rem;
-    padding-bottom: 20px;
+    padding-bottom: 1rem;
 }
 
 .titulos img {
@@ -244,14 +255,12 @@ header li a:hover::after {
     flex-direction: column;
     max-width: 70%;
     margin: auto;
-    /* align-items: center; */
     padding-bottom: 3rem;
     gap: 3rem;
     text-align: center;
 }
 
 .conteudo img {
-    /* animation: ladoSecaoEsquerdo .5s ease-in-out forwards; */
     width: 60%;
     border-radius: 10px;
     cursor: pointer;
@@ -264,7 +273,6 @@ header li a:hover::after {
 }
 
 .conteudo p {
-    /* animation: ladoSecaoDireito .5s ease-in-out forwards; */
     color: var(--color-blank);
     justify-self: center;
     margin: 0 2rem;
@@ -274,13 +282,28 @@ header li a:hover::after {
     font-size: 1.3rem;
 }
 
+.titulos-secundarios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-red-secondary);
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 1.3rem;
+}
+
+/* History section */
+
+.history-section {
+    background-color: var(--color-primary);
+    scroll-margin-top: 4rem;
+}
+
 .conteudo .houses {
     display: flex;
-
 }
 
 .conteudo .houses img {
-    top: 3rem;
+    top: 10rem;
     position: sticky;
     width: 40%;
     height: 40%;
@@ -309,30 +332,7 @@ header li a:hover::after {
     margin-bottom: 3rem;
 }
 
-/* @keyframes ladoSecaoEsquerdo {
-    from {
-        transition: .5s;
-        transform: translate3d(-80px, 0, 0);
-    }
-
-    to {
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-@keyframes ladoSecaoDireito {
-    from {
-        transition: .5s;
-        transform: translate3d(80px, 0, 0)
-    }
-
-    to {
-        transform: translate3d(0, 0, 0);
-    }
-} */
-
 /* order section */
-
 .order-section {
     background-color: var(--color-secondary);
     scroll-margin-top: 4rem;
@@ -384,8 +384,6 @@ h3 {
     background: var(--color-red-primary);
     transform: translateX(-50%);
 }
-
-
 
 /* books section */
 
@@ -505,7 +503,7 @@ h3 {
 
 .modal-content iframe {
     width: 100%;
-    height: 500px;
+    height: 25rem;
     border-radius: .8rem;
     margin-bottom: 1rem;
 }
@@ -655,10 +653,16 @@ h3 {
 }
 
 /* series section */
-
 .series-section {
     background-color: var(--color-primary);
     scroll-margin-top: 4rem;
+}
+
+.series-section iframe {
+    width: 100%;
+    height: 25rem;
+    border-radius: .8rem;
+    margin-bottom: 1rem;
 }
 
 /* actors-article */
@@ -707,13 +711,11 @@ h3 {
     transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
 }
 
-/*Text*/
 .title {
     font-size: 1.3rem;
     font-weight: bold;
 }
 
-/*Text divider*/
 .title::after {
     content: "";
     display: block;
@@ -724,12 +726,6 @@ h3 {
     background-color: #1b1b1b;
 }
 
-
-/*Hover*/
-/* .card:hover {
-    background-color: #1b1b1b25;
-} */
-
 .card:hover .card-front {
     transform: translateX(-100%);
 }
@@ -738,9 +734,6 @@ h3 {
     transform: translateX(0);
 }
 
-
-
-
 /* game-section */
 .game {
     background-color: var(--color-primary);
@@ -748,28 +741,23 @@ h3 {
     scroll-margin-top: 4rem;
 }
 
-.trailer {
-    display: flex;
-    flex-direction: column;
-    max-width: 70%;
-    margin: auto;
-}
-
-.trailer h2 {
-    text-align: left;
-    color: var(--color-red-secondary);
-    font-family: cursive;
-    margin-bottom: 1rem;
-}
-
-.trailer img {
+.game iframe {
     width: 100%;
-    border-radius: 0.5rem;
+    height: 25rem;
+    border-radius: .8rem;
+}
+
+/* forum-article */
+
+.forum-article {
+    background-color: var(--color-secondary);
+    padding-bottom: 2rem;
+    scroll-margin-top: 4rem;
 }
 
 /* form-article */
 .form {
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
     padding-bottom: 4rem;
 }
 
@@ -793,8 +781,9 @@ h3 {
     margin-bottom: 1rem;
 }
 
-.column1 input {
-    height: 100%;
+.column1 textarea {
+    font-size: 1.2rem;
+    font-family: 'poppins';
 }
 
 .form .column2 {
@@ -811,6 +800,8 @@ h3 {
 
 .column2 input {
     height: 2rem;
+    font-size: 1.2rem;
+    font-family: 'poppins';
 }
 
 .column2 button {
@@ -837,240 +828,4 @@ h3 {
     text-align: center;
     font-size: 1.2rem;
     font-family: 'poppins';
-}
-
-
-/* Mobile 320 a 375px */
-@media screen and (max-width: 550px) {
-
-    /* Header */
-    header {
-        background: url(./img/casas.png);
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        height: 70vh;
-        justify-content: center;
-        grid-template-columns: 1fr;
-    }
-
-    header .navegacao {
-        display: none;
-    }
-
-
-    #titulo {
-        font-size: 1.4rem;
-        text-align: center;
-    }
-
-    /* History section */
-
-    .titulos {
-        display: flex;
-        text-align: center;
-        font-family: 'Berkshire Swash', cursive;
-        font-size: 1.4rem;
-        padding: 1rem 0.5rem;
-    }
-
-    .titulos img {
-        display: none;
-    }
-
-    .titulos h1::after {
-        margin-left: 0.3rem;
-    }
-
-    .titulo-separador {
-        gap: 1rem;
-        grid-template-rows: 1fr;
-        padding-bottom: 1rem;
-    }
-
-    .titulo-separador .separadores {
-        gap: 0.5rem;
-    }
-
-    .titulo-separador .separadores span {
-        height: 1rem;
-        width: 1rem;
-    }
-
-    .conteudo {
-        display: flex;
-        flex-direction: column;
-        max-width: 80%;
-    }
-
-    .conteudo img {
-        border-radius: .3rem;
-    }
-
-    .conteudo p {
-        margin: 0;
-        margin-top: -1rem;
-    }
-
-
-    /* books section */
-
-    .books {
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-    }
-
-    .books-end {
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-    }
-
-    .books img {
-        border-radius: .3rem;
-    }
-
-    .books-end img {
-        height: unset;
-    }
-
-    /* Janela modal */
-    .modal {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        display: none;
-
-    }
-
-    .modal-content {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        background-color: var(--color-primary);
-        margin: auto;
-        padding: 0;
-        border: .2rem solid var(--color-red-primary);
-        width: 100%;
-        height: 100%;
-
-        border-radius: .5rem;
-    }
-
-    .modal-content h1 {
-        margin: 1rem;
-        text-align: center;
-        color: var(--color-red-secondary);
-        font-family: 'Berkshire Swash', cursive;
-    }
-
-    .modal-content h2 {
-        margin: 0 1rem;
-        color: var(--color-red-secondary);
-        font-family: cursive;
-    }
-
-    .modal-content p {
-        color: var(--color-blank);
-        margin: 1rem;
-        font-family: 'poppins';
-        color: var(--color-gray);
-        text-align: justify;
-        font-size: 1.2rem;
-    }
-
-    .modal-content button {
-        background-color: var(--color-red-primary);
-        color: var(--color-blank);
-        border-radius: 1rem;
-        font-size: 1.6rem;
-        font-family: 'poppins';
-        padding: .5rem;
-        margin: auto;
-        margin-bottom: 1rem;
-    }
-
-    .modal-close {
-        position: absolute;
-        top: 0;
-        right: .5rem;
-        font-size: 2rem;
-        font-weight: bold;
-        text-decoration: none;
-        color: var(--color-gray);
-    }
-
-    .modal-close:hover,
-    .modal-close:focus {
-        color: var(--color-red-secondary);
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-
-    /* films-section */
-
-    .films {
-        display: flex;
-        flex-direction: column;
-        max-width: 80%;
-        gap: 3rem;
-    }
-
-    /* actors-article */
-
-    .actors-grid {
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    /* Game */
-
-    .trailer {
-        display: flex;
-        flex-direction: column;
-        max-width: 80%;
-    }
-
-
-    /* form-article */
-
-    .form form {
-        display: flex;
-        flex-direction: column;
-        max-width: 80%;
-        gap: 3rem;
-    }
-
-    .form .column1 {
-        display: flex;
-        flex-direction: column;
-        height: 10rem;
-    }
-
-    .form .column2 {
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-
-    }
-
-    .column2 label {
-        color: var(--color-gray);
-        font-size: 1.2rem;
-        font-family: 'poppins';
-    }
-
-    .column2 input {
-        margin-top: -3rem;
-    }
-
-    .column2 button {
-        margin-top: 1rem;
-    }
-
 }

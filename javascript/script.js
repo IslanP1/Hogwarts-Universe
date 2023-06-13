@@ -80,6 +80,11 @@ const conteudo = [
         modalcloseId: '#modalclose-pedra-filosofal'
     },
     {
+        linkId: '#filme-camera-secreta',
+        modalId: '#modal-camera-secreta',
+        modalcloseId: '#modalclose-camera-secreta'
+    },
+    {
         linkId: '#filme-prisioneiro-azkaban',
         modalId: '#modal-prisioneiro-azkaban',
         modalcloseId: '#modalclose-prisioneiro-azkaban'
@@ -100,10 +105,20 @@ const conteudo = [
         modalcloseId: '#modalclose-enigma-principe'
     },
     {
-        linkId: '#filme-reliquias-morte',
-        modalId: '#modal-reliquias-morte',
-        modalcloseId: '#modalclose-reliquias-morte'
-    } 
+        linkId: '#filme-reliquias-morte-1',
+        modalId: '#modal-reliquias-morte-1',
+        modalcloseId: '#modalclose-reliquias-morte-1'
+    },
+    {
+        linkId: '#filme-reliquias-morte-2',
+        modalId: '#modal-reliquias-morte-2',
+        modalcloseId: '#modalclose-reliquias-morte-2'
+    },
+    {
+        linkId: '#documentario-volta-hogwarts',
+        modalId: '#modal-documentario-volta-hogwarts',
+        modalcloseId: '#modalclose-documentario-volta-hogwarts'
+    }    
 ]
 
 function ativaLetra(elemento) {

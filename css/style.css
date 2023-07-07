@@ -25,7 +25,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 18px;
+    width: .5rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -33,7 +33,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 35px;
+    border-radius: .5rem;
     background-color: var(--color-red-primary);
 }
 
@@ -44,7 +44,7 @@ body {
 /* Header */
 header {
     background-color: black;
-    background-image: url(../img/casas.png);
+    background-image: url(../img/casas_11zon.webp);
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -117,6 +117,16 @@ header li a:hover::after {
     border-radius: 2px;
     margin-left: 0%;
     transition: width .3s ease, margin-left 0s linear;
+}
+
+.scroll-progress {
+    z-index: 999999;
+    width: 0;
+    background-color: var(--color-red-primary);
+    height: .25rem;
+    position: fixed;
+    top: 4rem;
+    left: 0;
 }
 
 #titulo {
@@ -260,6 +270,10 @@ header li a:hover::after {
     text-align: center;
 }
 
+.recuo {
+    text-indent: 4rem;
+}
+
 .conteudo img {
     width: 60%;
     border-radius: 10px;
@@ -361,10 +375,12 @@ h3 {
     color: white;
     padding: 1.75rem;
     margin: 1rem;
+    cursor: pointer;
 }
 
 .timeline-component {
     margin: 0px 20px 20px 20px;
+    position: relative;
 }
 
 .timeline-middle {
@@ -383,6 +399,46 @@ h3 {
     border-radius: 50%;
     background: var(--color-red-primary);
     transform: translateX(-50%);
+}
+
+.timeline li::before {
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+
+.timeline li::after {
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+}
+
+.timeline li:hover::before {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid var(--color-red-primary);
+    border-right: 2px solid var(--color-red-primary);
+}
+
+.timeline li:hover::after {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid var(--color-red-primary);
+    border-left: 2px solid var(--color-red-primary);
 }
 
 /* books section */
@@ -684,6 +740,7 @@ h3 {
     width: 100%;
     height: 100%;
     border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 .card {
@@ -706,24 +763,26 @@ h3 {
 
 .card-back {
     padding: .5rem;
-    transform: translateX(120%);  
+    transform: translateX(120%);
     text-align: center;
     transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
 }
 
 .title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
+    font-family: 'poppins';
+    color: var(--color-red-secondary);
 }
 
 .title::after {
     content: "";
     display: block;
-    width: 50%;
+    width: 15%;
     border-radius: 50%;
     height: 2px;
     margin: 2px auto;
-    background-color: #1b1b1b;
+    background-color: var(--color-red-primary);
 }
 
 .card:hover .card-front {
@@ -828,4 +887,716 @@ h3 {
     text-align: center;
     font-size: 1.2rem;
     font-family: 'poppins';
+}
+
+@media (max-width: 425px) {
+    header {
+        background: url(../img/casas_11zon.webp);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 80vh;
+        justify-content: center;
+    }
+
+    header .navegacao {
+        display: none;
+    }
+
+    #titulo {
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 1.4rem;
+        width: 90%;
+    }
+
+    /* Conteúdo geral */
+
+    .trailer {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .titulos {
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+    }
+
+    .titulos img {
+        display: none;
+    }
+
+    .titulo-separador {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .titulo-separador .separadores span {
+        margin-top: .5rem;
+    }
+
+    .conteudo {
+        max-width: 80%;
+    }
+
+    .conteudo img {
+        width: 100%;
+        margin: auto;
+    }
+
+    .conteudo p {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    .titulos-secundarios {
+        font-size: 1.2rem;
+    }
+
+
+    /* History section */
+    .conteudo .houses {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo .houses img {
+        position: static;
+        top: 0rem;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .conteudo .chapeu-seletor img {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .conteudo .professores img {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .conteudo .criaturas-magicas img {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+
+    /* order section */
+    .order-section {
+        background-color: var(--color-secondary);
+        scroll-margin-top: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        height: auto;
+        padding: 0;
+    }
+
+    .timeline-middle {
+        display: none;
+    }
+
+    /* books section */
+    .books {
+        display: flex;
+        flex-direction: column;
+        max-width: 70%;
+        padding: 2rem 0 2rem;
+    }
+
+    /* Filmes */
+
+    .films {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        gap: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    /* serie */
+    .series-section iframe {
+        width: 100%;
+        height: 15rem;
+        border-radius: .8rem;
+        margin-bottom: 1rem;
+    }
+
+    /* actors-article */
+    .actors-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* games */
+    .game iframe {
+        width: 100%;
+        height: 15rem;
+        border-radius: .8rem;
+    }
+
+    /* form-article */
+    .form form {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        gap: 2rem;
+    }
+
+    .column1 textarea {
+        font-size: 1rem;
+        height: 10rem;
+    }
+
+    .column1 label {
+        margin-bottom: 0;
+    }
+
+    .column2 input {
+        font-size: 1rem;
+    }
+
+    .column2 button {
+        margin-top: 2rem;
+        max-width: 10%;
+        max-width: 30%;
+    }
+}
+
+
+@media (min-width: 426px) and (max-width: 590px) {
+    header {
+        background: url(../img/casas_11zon.webp);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 80vh;
+        justify-content: center;
+    }
+
+    header .navegacao {
+        display: none;
+    }
+
+    #titulo {
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 1.4rem;
+        width: 90%;
+    }
+
+    /* Conteúdo geral */
+
+    .trailer {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .titulos {
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+    }
+
+    .titulos img {
+        display: none;
+    }
+
+    .titulo-separador {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .titulo-separador .separadores span {
+        margin-top: .5rem;
+    }
+
+    .conteudo {
+        max-width: 80%;
+    }
+
+    .conteudo img {
+        width: 100%;
+        margin: auto;
+    }
+
+    .conteudo p {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    .titulos-secundarios {
+        font-size: 1.2rem;
+    }
+
+
+    /* History section */
+    .conteudo .houses {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo .houses img {
+        position: static;
+        top: 0rem;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .conteudo .chapeu-seletor img {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .conteudo .professores img {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .conteudo .criaturas-magicas img {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+
+    /* order section */
+    .timeline {
+        display: grid;
+        grid-template-columns: 1fr 1px 1fr;
+        width: 80%;
+        height: auto;
+        max-width: 800px;
+        margin: auto;
+        padding: 0;
+    }
+
+    .timeline p,
+    h3 {
+        font-size: 1.1rem;
+        font-family: 'poppins';
+    }
+
+    .timeline-content {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .timeline-component {
+        margin: 0px 15px 15px 15px;
+    }
+
+    .timeline-circle {
+        width: 10px;
+        height: 10px;
+    }
+
+    /* books section */
+    .books {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 70%;
+        margin: auto;
+        gap: 5rem;
+        grid-auto-rows: 1fr;
+        padding-bottom: 3rem;
+    }
+
+    /* Filmes */
+    .films {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        gap: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    /* serie */
+    .series-section iframe {
+        width: 100%;
+        height: 15rem;
+        border-radius: .8rem;
+        margin-bottom: 1rem;
+    }
+
+    /* actors-article */
+    .actors-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* games */
+    .game iframe {
+        width: 100%;
+        height: 15rem;
+        border-radius: .8rem;
+    }
+
+    /* form-article */
+    .form form {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        gap: 2rem;
+    }
+
+    .column1 textarea {
+        font-size: 1rem;
+        height: 10rem;
+    }
+
+    .column1 label {
+        margin-bottom: 0;
+    }
+
+    .column2 input {
+        font-size: 1rem;
+    }
+
+    .column2 button {
+        margin-top: 2rem;
+        max-width: 10%;
+        max-width: 30%;
+    }
+}
+
+
+@media (min-width: 591px) and (max-width: 768px) {
+    header {
+        background: url(../img/casas_11zon.webp);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 80vh;
+        justify-content: center;
+    }
+
+    header .navegacao {
+        display: none;
+    }
+
+    #titulo {
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 2rem;
+        width: 90%;
+    }
+
+    /* Conteúdo geral */
+
+    .trailer {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .titulos {
+        font-size: 1.8rem;
+        padding-bottom: 1rem;
+    }
+
+    .titulo-separador {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .titulo-separador .separadores span {
+        margin-top: .5rem;
+    }
+
+    .conteudo {
+        max-width: 80%;
+    }
+
+    .conteudo img {
+        width: 90%;
+        margin: auto;
+    }
+
+    .conteudo p {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    .titulos-secundarios {
+        font-size: 1.7rem;
+    }
+
+    /* History section */
+    .conteudo .houses {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo .houses img {
+        position: static;
+        top: 0rem;
+        width: 60%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .conteudo .chapeu-seletor img {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .conteudo .professores img {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .conteudo .criaturas-magicas img {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    /* order section */
+    .timeline {
+        display: grid;
+        grid-template-columns: 1fr 3px 1fr;
+        width: 80%;
+        height: auto;
+        max-width: 800px;
+        margin: auto;
+        padding: 0;
+    }
+
+    .timeline p,
+    h3 {
+        font-size: 1.1rem;
+        font-family: 'poppins';
+    }
+
+    .timeline-content {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .timeline-component {
+        margin: 0px 15px 15px 15px;
+    }
+
+    .timeline-circle {
+        width: 10px;
+        height: 10px;
+    }
+
+    /* books section */
+    .books {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 80%;
+        margin: auto;
+        gap: 3rem;
+        grid-auto-rows: 1fr;
+        padding-bottom: 3rem;
+    }
+
+    /* Filmes */
+    .films {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        gap: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    /* serie */
+    .series-section iframe {
+        width: 90%;
+        height: 15rem;
+        border-radius: .8rem;
+        margin-bottom: 1rem;
+    }
+
+    /* actors-article */
+    .actors-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 80%;
+    }
+
+    /* games */
+    .game iframe {
+        width: 90%;
+        height: 15rem;
+        border-radius: .8rem;
+    }
+
+    /* form-article */
+    .form form {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        gap: 2rem;
+    }
+
+    .column1 textarea {
+        font-size: 1rem;
+        height: 10rem;
+    }
+
+    .column1 label {
+        margin-bottom: 0;
+    }
+
+    .column2 input {
+        font-size: 1rem;
+    }
+
+    .column2 button {
+        margin-top: 2rem;
+        max-width: 10%;
+        max-width: 30%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1120px) {
+    header {
+        background: url(../img/casas_11zon.webp);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 80vh;
+        justify-content: center;
+    }
+
+    header .navegacao {
+        display: none;
+    }
+
+    #titulo {
+        font-size: 2.2rem;
+    }
+
+    /* Conteúdo geral */
+    .titulos {
+        font-size: 1.8rem;
+        padding-bottom: 1rem;
+    }
+
+    .conteudo {
+        max-width: 80%;
+    }
+
+    .conteudo img {
+        width: 80%;
+    }
+
+    .conteudo p {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    .titulos-secundarios {
+        font-size: 1.7rem;
+    }
+
+    /* History section */
+    .conteudo .houses {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo .houses img {
+        position: static;
+        top: 0rem;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .conteudo .chapeu-seletor img {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .conteudo .professores img {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .conteudo .criaturas-magicas img {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    /* books section */
+    .books {
+        max-width: 85%;
+        gap: 3rem;
+    }
+
+    /* Filmes */
+    .films {
+        max-width: 85%;
+        gap: 3rem;
+    }
+
+    /* serie */
+    .series-section iframe {
+        width: 100%;
+        height: 15rem;
+    }
+
+    /* actors-article */
+    .actors-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 80%;
+    }
+
+    /* games */
+    .game iframe {
+        width: 100%;
+        height: 15rem;
+    }
+
+    /* form-article */
+    .form form {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        gap: 2rem;
+    }
+
+    .column1 textarea {
+        font-size: 1rem;
+        height: 10rem;
+    }
+
+    .column1 label {
+        margin-bottom: 0;
+    }
+
+    .column2 input {
+        font-size: 1rem;
+    }
+
+    .column2 button {
+        margin-top: 2rem;
+        max-width: 10%;
+        max-width: 30%;
+    }
 }

@@ -1,6 +1,5 @@
 const textosDigitados = [
     document.querySelector('.digitar'),
-    document.querySelector('.titulo1'),
 ]
 
 const conteudo = [
@@ -118,7 +117,7 @@ const conteudo = [
         linkId: '#documentario-volta-hogwarts',
         modalId: '#modal-documentario-volta-hogwarts',
         modalcloseId: '#modalclose-documentario-volta-hogwarts'
-    }    
+    }
 ]
 
 function ativaLetra(elemento) {
@@ -168,3 +167,13 @@ for (let j = 0; j < conteudo.length; j++) {
 for (let k = 0; k < textosDigitados.length; k++) {
     ativaLetra(textosDigitados[k]);
 };
+
+const scrollProgressElement = document.querySelector("#scroll-progress");
+function activateScroll() {
+    const totalHeightOfWebPage = document.body.scrollHeight;
+    const currentDistanceFromTop = document.documentElement.scrollTop;
+    const windowHeight = document.documentElement.clientHeight;
+    const scrolledPercentage = currentDistanceFromTop / (totalHeightOfWebPage - windowHeight) * 100;
+    scrollProgressElement.style.width = Math.round(scrolledPercentage) + "%";
+}
+document.addEventListener("scroll", activateScroll);

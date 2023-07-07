@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +7,6 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Hogwarts Universe</title>
 </head>
-
 <body>
   <header aria-label="Início do site" id="home">
     <nav>
@@ -29,6 +27,7 @@
       <h1 class="digitar">Hogwarts Universe</h1>
     </div>
   </header>
+  <div class="scroll-progress" id="scroll-progress"></div>
   <section aria-label="Seção de filmes" class="history-section" id="about">
     <div class="titulos">
       <div class="imageWrapper">
@@ -48,9 +47,10 @@
     </div>
     <div class="conteudo">
       <div class="images">
-        <img src="img/hogwarts.jpg" alt="hogwarts">
+        <img src="img/hogwarts_11zon.webp" alt="hogwarts">
       </div>
-      <p>Hogwarts é uma escola de magia famosa que é o cenário da série de livros e filmes Harry Potter. A escola está
+      <p class="recuo">Hogwarts é uma escola de magia famosa que é o cenário da série de livros e filmes Harry Potter. A
+        escola está
         localizada em algum lugar da Grã-Bretanha e é frequentada por jovens bruxos e bruxas que vêm de todo o mundo
         mágico. Hogwarts é uma escola impressionante e imponente, com torres altas, janelas pontiagudas e um grande
         pátio de pedra. A história da escola remonta a mais de mil anos, quando foi fundada por quatro bruxos
@@ -65,7 +65,7 @@
       </div>
       <div class="houses">
         <img src="img/casas-logo.png" alt="brasão casas hogwarts">
-        <p>
+        <p class="recuo">
           As quatro casas de Hogwarts são Grifinória, Lufa-Lufa, Corvinal e Sonserina, cada uma com suas próprias
           características definidoras. Grifinória é conhecida por sua coragem, determinação e bravura, enquanto
           Lufa-Lufa é caracterizada por sua lealdade, paciência e gentileza. Corvinal é conhecida por sua inteligência,
@@ -82,8 +82,8 @@
         <h1>Chapéu seletor</h1>
       </div>
       <div class="chapeu-seletor">
-        <img src="img/chapeu-seletor.jpg" alt="chapéu seletor" class="ordem-1">
-        <p class="ordem-2">
+        <img src="img/chapeu-seletor_11zon.webp" alt="chapéu seletor" class="ordem-1">
+        <p class="recuo">
           Hogwarts é conhecida por ser uma escola de magia e bruxaria extremamente renomada, e o processo de seleção do
           Chapéu Seletor é um dos elementos mais icônicos da experiência dos alunos em Hogwarts. Este objeto mágico é
           responsável por dividir os alunos nas quatro casas da escola: Grifinória, Sonserina, Corvinal e Lufa-Lufa.
@@ -102,8 +102,8 @@
         <h1>Professores e Disciplinas</h1>
       </div>
       <div class="professores">
-        <img src="img/professores.jpg" alt="professores de hogwarts">
-        <p>
+        <img src="img/professores_11zon.webp" alt="professores de hogwarts">
+        <p class="recuo">
           Os professores de Hogwarts são uma parte essencial da experiência educacional dos alunos da escola de magia e
           bruxaria mais famosa do mundo. Cada professor é responsável por ensinar uma disciplina diferente e trazer sua
           própria personalidade e estilo de ensino para a sala de aula.
@@ -136,8 +136,8 @@
         <h1>Criaturas mágicas</h1>
       </div>
       <div class="criaturas-magicas">
-        <img src="img/animais.png" alt="criaturas mágicas">
-        <p>
+        <img src="img/animais_11zon.webp" alt="criaturas mágicas">
+        <p class="recuo">
           Hogwarts é uma escola de magia e bruxaria cheia de criaturas mágicas e terrenos encantados. Os alunos de
           Hogwarts têm a oportunidade de explorar muitos desses locais e encontrar muitas criaturas mágicas durante sua
           estadia na escola.
@@ -182,12 +182,16 @@
         <div class="timeline-circle"></div>
       </div>
       <div class="timeline-component timeline-content">
-        <h3>2016</h3>
-        <p>Animais Fantásticos e Onde Habitam</p>
+        <li>
+          <h3>2016</h3>
+          <p>Animais Fantásticos e Onde Habitam</p>
+        </li>
       </div>
       <div class="timeline-component timeline-content">
-        <h3>2018</h3>
-        <p>Animais Fantásticos: Os Crimes de GrindelWald</p>
+        <li>
+          <h3>2018</h3>
+          <p>Animais Fantásticos: Os Crimes de GrindelWald</p>
+        </li>
       </div>
       <div class="timeline-middle">
         <div class="timeline-circle"></div>
@@ -200,12 +204,16 @@
         <div class="timeline-circle"></div>
       </div>
       <div class=" timeline-component timeline-content">
-        <h3>2022</h3>
-        <p>Animais Fantásticos: Os Segredos de Dumbledore</p>
+        <li>
+          <h3>2022</h3>
+          <p>Animais Fantásticos: Os Segredos de Dumbledore</p>
+        </li>
       </div>
       <div class=" timeline-component timeline-content">
-        <h3>2001</h3>
-        <p>Harry Potter e a Pedra Filosofal</p>
+        <li>
+          <h3>2001</h3>
+          <p>Harry Potter e a Pedra Filosofal</p>
+        </li>
       </div>
       <div class="timeline-middle">
         <div class="timeline-circle"></div>
@@ -218,12 +226,16 @@
         <div class="timeline-circle"></div>
       </div>
       <div class=" timeline-component timeline-content">
-        <h3>2002</h3>
-        <p>Harry Potter e a Câmera Secreta</p>
+        <li>
+          <h3>2002</h3>
+          <p>Harry Potter e a Câmera Secreta</p>
+        </li>
       </div>
       <div class=" timeline-component timeline-content">
-        <h3>2004</h3>
-        <p>Harry Potter e o Prisioneiro Azkaban</p>
+        <li>
+          <h3>2004</h3>
+          <p>Harry Potter e o Prisioneiro Azkaban</p>
+        </li>
       </div>
       <div class="timeline-middle">
         <div class="timeline-circle"></div>
@@ -236,12 +248,16 @@
         <div class="timeline-circle"></div>
       </div>
       <div class=" timeline-component timeline-content">
-        <h3>2005</h3>
-        <p>Harry Potter e o Cálice de Fogo</p>
+        <li>
+          <h3>2005</h3>
+          <p>Harry Potter e o Cálice de Fogo</p>
+        </li>
       </div>
       <div class=" timeline-component timeline-content">
-        <h3>2007</h3>
-        <p>Harry Potter e a Ordem da Fênix</p>
+        <li>
+          <h3>2007</h3>
+          <p>Harry Potter e a Ordem da Fênix</p>
+        </li>
       </div>
       <div class="timeline-middle">
         <div class="timeline-circle"></div>
@@ -254,12 +270,16 @@
         <div class="timeline-circle"></div>
       </div>
       <div class=" timeline-component timeline-content">
-        <h3>2009</h3>
-        <p>Harry Potter e o Enigma do Príncipe</p>
+        <li>
+          <h3>2009</h3>
+          <p>Harry Potter e o Enigma do Príncipe</p>
+        </li>
       </div>
       <div class=" timeline-component timeline-content">
-        <h3>2010</h3>
-        <p>Harry Potter e as Relíquias da Morte - Parte 1</p>
+        <li>
+          <h3>2010</h3>
+          <p>Harry Potter e as Relíquias da Morte - Parte 1</p>
+        </li>
       </div>
       <div class="timeline-middle">
         <div class="timeline-circle"></div>
@@ -272,8 +292,10 @@
         <div class="timeline-circle"></div>
       </div>
       <div class=" timeline-component timeline-content">
-        <h3>2011</h3>
-        <p>Harry Potter e as Relíquias da Morte - Parte 2</p>
+        <li>
+          <h3>2011</h3>
+          <p>Harry Potter e as Relíquias da Morte - Parte 2</p>
+        </li>
       </div>
     </div>
   </section>
@@ -296,47 +318,46 @@
     </div>
     <div class="books">
       <a href="#" id="livro-onde-habitam">
-        <img src="img/livro-onde-habitam.jpeg" alt="Animais Fantásticos e Onde Habitam">
+        <img src="img/livro-onde-habitam_11zon.webp" alt="Animais Fantásticos e Onde Habitam">
       </a>
       <a href="#" id="livro-crimes-grindelwald">
-        <img src="img/livro-crimes-grindelwald.jpeg" alt="Animais Fantásticos e os Crimes de GrindelWald">
+        <img src="img/livro-crimes-grindelwald_11zon.webp" alt="Animais Fantásticos e os Crimes de GrindelWald">
       </a>
       <a href="#" id="livro-segredos-dumbledore">
-        <img src="img/livro-segredos-dumbledore.jpeg" alt="Animais Fantásticos e os segredos de Dumbledore">
+        <img src="img/livro-segredos-dumbledore_11zon.webp" alt="Animais Fantásticos e os segredos de Dumbledore">
       </a>
       <a href="#" id="livro-pedra-filosofal">
-        <img src="img/livro-pedra-filosofal.jpeg" alt="Harry Potter e a Pedra Filosofal">
+        <img src="img/livro-pedra-filosofal_11zon.webp" alt="Harry Potter e a Pedra Filosofal">
       </a>
       <a href="#" id="livro-camera-secreta">
-        <img src="img/livro-camera-secreta.jpeg" alt="Harry Potter e a Câmara Secreta">
+        <img src="img/livro-camera-secreta_11zon.webp" alt="Harry Potter e a Câmara Secreta">
       </a>
       <a href="#" id="livro-prisioneiro-azkabam">
-        <img src="img/livro-prisioneiro-azkabam.jpeg" alt="Harry Potter e o Prisioneiro de Azkaban">
+        <img src="img/livro-prisioneiro-azkabam_11zon.webp" alt="Harry Potter e o Prisioneiro de Azkaban">
       </a>
       <a href="#" id="livro-calice-fogo">
-        <img src="img/livro-calice-fogo.jpeg" alt="Harry Potter e o Cálice de Fogo">
+        <img src="img/livro-calice-fogo_11zon.webp" alt="Harry Potter e o Cálice de Fogo">
       </a>
       <a href="#" id="livro-ordem-fenix">
-        <img src="img/livro-ordem-fênix.jpeg" alt="Harry Potter e a Ordem da Fênix">
+        <img src="img/livro-ordem-fênix.webp" alt="Harry Potter e a Ordem da Fênix">
       </a>
       <a href="#" id="livro-enigma-principe">
-        <img src="img/livro-enigma-principe.jpeg" alt="Harry Potter e o Enigma do Príncipe">
+        <img src="img/livro-enigma-principe_11zon.webp" alt="Harry Potter e o Enigma do Príncipe">
       </a>
-      <div class="books-end">
-        <a href="#" id="livro-reliquias-morte">
-          <img src="img/livro-reliquias-morte.jpeg" alt="Harry Potter e as Relíquias da Morte">
-        </a>
-        <a href="#" id="livro-crianca-amaldicoada">
-          <img src="img/livro-crianca-amaldiçoada.jpeg" alt="Harry Potter e a Criança Amaldiçoada">
-        </a>
-      </div>
+      <a href="#" id="livro-reliquias-morte">
+        <img src="img/livro-reliquias-morte_11zon.webp" alt="Harry Potter e as Relíquias da Morte">
+      </a>
+      <a href="#" id="livro-crianca-amaldicoada">
+        <img src="img/livro-crianca-amaldiçoada.webp" alt="Harry Potter e a Criança Amaldiçoada">
+      </a>
     </div>
     <div class="modal" id="modal-livro-onde-habitam">
       <div class="modal-content">
         <a href="#" class="modal-close" id="modalclose-livro-onde-habitam">&times;</a>
         <h1>Animais Fantásticos e Onde Habitam</h1>
         <h2>Sinopse:</h2>
-        <p>O livro conta a história de Newt Scamander, um magizoólogo que viaja do Reino Unido para os Estados
+        <p class="recuo">O livro conta a história de Newt Scamander, um magizoólogo que viaja do Reino Unido para os
+          Estados
           Unidos com uma mala de animais mágicos. Ao chegar em Nova York, ele se depara com um problema: alguns
           animais fugiram da mala e estão soltos pela cidade. O livro é dividido em quatro partes, cada uma
           contando uma história diferente sobre os animais mágicos.</p>
@@ -352,7 +373,8 @@
         <a href="#" class="modal-close" id="modalclose-livro-crimes-grindelwald">&times;</a>
         <h1>Animais Fantásticos e os Crimes de Grindelwald</h1>
         <h2>Sinopse:</h2>
-        <p>"Animais Fantásticos e os Crimes de Grindelwald" é o segundo livro da série "Animais Fantásticos" de J.K.
+        <p class="recuo">"Animais Fantásticos e os Crimes de Grindelwald" é o segundo livro da série "Animais
+          Fantásticos" de J.K.
           Rowling, que se passa décadas antes da história de Harry Potter. Newt Scamander é chamado para ajudar a
           capturar o bruxo das trevas Gellert Grindelwald, que escapou da custódia e planeja algo muito maior do que
           todos imaginavam. Com o destino do mundo bruxo em jogo, Newt precisa encontrar uma maneira de derrotar
@@ -370,7 +392,8 @@
         <a href="#" class="modal-close" id="modalclose-livro-segredos-dumbledore">&times;</a>
         <h1>Animais Fantásticos e os Segredos de Dumbledore</h1>
         <h2>Sinopse:</h2>
-        <p>"Animais Fantásticos e os Segredos de Dumbledore" é o terceiro livro da série "Animais Fantásticos" de J.K.
+        <p class="recuo">"Animais Fantásticos e os Segredos de Dumbledore" é o terceiro livro da série "Animais
+          Fantásticos" de J.K.
           Rowling, que se passa décadas antes da história de Harry Potter. Newt Scamander é convocado por Dumbledore
           para ajudar a resolver uma série de assassinatos inexplicáveis que podem estar ligados ao retorno de Gellert
           Grindelwald. Enquanto investigam, Newt e seus amigos descobrem um segredo obscuro que pode mudar para sempre o
@@ -388,7 +411,8 @@
         <a href="#" class="modal-close" id="modalclose-livro-pedra-filosofal">&times;</a>
         <h1>Harry Potter e a Pedra Filosofal</h1>
         <h2>Sinopse:</h2>
-        <p>"Harry Potter e a Pedra Filosofal" é o primeiro livro da série de sucesso de J.K. Rowling. A história começa
+        <p class="recuo">"Harry Potter e a Pedra Filosofal" é o primeiro livro da série de sucesso de J.K. Rowling. A
+          história começa
           com o órfão Harry Potter descobrindo que ele é um bruxo e sendo levado para a Escola de Magia e Bruxaria de
           Hogwarts. Lá, Harry faz amizade com Ron Weasley e Hermione Granger, e juntos eles descobrem um mistério sobre
           a Pedra Filosofal, um objeto mágico poderoso que está escondido em Hogwarts. Harry e seus amigos precisam
@@ -407,7 +431,8 @@
         <a href="#" class="modal-close" id="modalclose-livro-camera-secreta">&times;</a>
         <h1>Harry Potter e a Câmara Secreta</h1>
         <h2>Sinopse:</h2>
-        <p>"Harry Potter e a Câmara Secreta" é o segundo livro da série de J.K. Rowling. Após um verão desastroso com
+        <p class="recuo">"Harry Potter e a Câmara Secreta" é o segundo livro da série de J.K. Rowling. Após um verão
+          desastroso com
           seus tios Dursley, Harry volta para Hogwarts para seu segundo ano. Porém, algo estranho está acontecendo na
           escola: alunos estão sendo petrificados e mensagens escritas com sangue aparecem nas paredes. Harry e seus
           amigos descobrem que uma câmara secreta foi aberta e um monstro está aterrorizando a escola. Com a ajuda do
@@ -428,7 +453,8 @@
         <a href="#" class="modal-close" id="modalclose-livro-prisioneiro-azkabam">&times;</a>
         <h1>Harry Potter e o Prisioneiro de Azkaban</h1>
         <h2>Sinopse:</h2>
-        <p>"Harry Potter e o Prisioneiro de Azkaban" é o terceiro livro da série de J.K. Rowling. Neste ano, Harry volta
+        <p class="recuo">"Harry Potter e o Prisioneiro de Azkaban" é o terceiro livro da série de J.K. Rowling. Neste
+          ano, Harry volta
           para Hogwarts, mas a escola está em alerta máximo devido à fuga de Sirius Black, um perigoso prisioneiro de
           Azkaban. À medida que Harry descobre a verdade sobre o passado de Sirius e seu vínculo com seus pais, ele se
           vê envolvido em uma conspiração sombria que ameaça sua própria vida. Com a ajuda de seus amigos, Harry
@@ -446,7 +472,8 @@
         <a href="#" class="modal-close" id="modalclose-livro-calice-fogo">&times;</a>
         <h1>Harry Potter e o Cálice de Fogo</h1>
         <h2>Sinopse:</h2>
-        <p>"Harry Potter e o Cálice de Fogo" é o quarto livro da série de J.K. Rowling. Neste ano, Hogwarts sediará o
+        <p class="recuo">"Harry Potter e o Cálice de Fogo" é o quarto livro da série de J.K. Rowling. Neste ano,
+          Hogwarts sediará o
           Torneio Tribruxo, um evento mágico que reúne estudantes de três escolas de magia. Harry é inesperadamente
           selecionado como o quarto campeão, o que o leva a enfrentar desafios perigosos e descobrir segredos sombrios.
           Enquanto lida com o torneio, Harry também enfrenta os crescentes sinais de que o Lorde das Trevas está
@@ -463,7 +490,8 @@
         <a href="#" class="modal-close" id="modalclose-livro-ordem-fenix">&times;</a>
         <h1>Harry Potter e a Ordem da Fênix</h1>
         <h2>Sinopse:</h2>
-        <p>"Harry Potter e a Ordem da Fênix" é o quinto livro da série de J.K. Rowling. Neste ano, Harry enfrenta
+        <p class="recuo">"Harry Potter e a Ordem da Fênix" é o quinto livro da série de J.K. Rowling. Neste ano, Harry
+          enfrenta
           desafios ainda maiores. Ele descobre que o Ministério da Magia está negando o retorno de Voldemort e se
           recusando a preparar a comunidade mágica para a guerra iminente. Determinado a combater as forças das trevas,
           Harry se junta à Ordem da Fênix, um grupo secreto liderado por Dumbledore. Enquanto enfrenta a hostilidade do
@@ -480,7 +508,8 @@
         <a href="#" class="modal-close" id="modalclose-livro-enigma-principe">&times;</a>
         <h1>Harry Potter e o Enigma do Príncipe</h1>
         <h2>Sinopse:</h2>
-        <p>"Harry Potter e o Enigma do Príncipe" é o sexto livro da série de J.K. Rowling. Conforme Voldemort se
+        <p class="recuo">"Harry Potter e o Enigma do Príncipe" é o sexto livro da série de J.K. Rowling. Conforme
+          Voldemort se
           fortalece, Hogwarts se prepara para a batalha final. Harry recebe aulas particulares de Dumbledore, onde
           aprende sobre o passado sombrio de Voldemort e a importância das Horcruxes. Enquanto isso, os relacionamentos
           se complicam, segredos são revelados e a tragédia atinge Hogwarts. O livro explora os caminhos obscuros da
@@ -496,7 +525,8 @@
         <a href="#" class="modal-close" id="modalclose-livro-reliquias-morte">&times;</a>
         <h1>Harry Potter e as Relíquias da Morte</h1>
         <h2>Sinopse:</h2>
-        <p>"Harry Potter e as Relíquias da Morte" é o sétimo e último livro da série de J.K. Rowling. Com a guerra em
+        <p class="recuo">"Harry Potter e as Relíquias da Morte" é o sétimo e último livro da série de J.K. Rowling. Com
+          a guerra em
           pleno andamento, Harry, Rony e Hermione embarcam em uma perigosa missão para encontrar e destruir as Horcruxes
           de Voldemort. Enquanto enfrentam obstáculos mortais e sacrificam tudo pelo bem maior, eles descobrem a verdade
           sobre as Relíquias da Morte e o poder do amor e da coragem. O livro culmina em um confronto épico entre Harry
@@ -512,7 +542,8 @@
         <a href="#" class="modal-close" id="modalclose-livro-crianca-amaldicoada">&times;</a>
         <h1>Harry Potter e a Criança Amaldiçoada</h1>
         <h2>Sinopse:</h2>
-        <p>"Harry Potter e a Criança Amaldiçoada" é uma peça de teatro de Jack Thorne, baseada em uma história original
+        <p class="recuo">"Harry Potter e a Criança Amaldiçoada" é uma peça de teatro de Jack Thorne, baseada em uma
+          história original
           de J.K. Rowling, John Tiffany e Jack Thorne. A trama se passa 19 anos após os eventos de "Relíquias da Morte"
           e segue Harry Potter adulto, agora casado e pai de três filhos. Enquanto lida com o legado do passado, Harry
           enfrenta desafios familiares e descobre que o passado pode voltar para assombrar o presente. A peça aborda
@@ -545,73 +576,73 @@
     <div class="films">
       <a href="#" id="filme-onde-habitam">
         <div class="film">
-          <img src="img/filme-onde-habitam.jpg" alt="Animais Fantásticos e Onde Habitam">
+          <img src="img/filme-onde-habitam_11zon.webp" alt="Animais Fantásticos e Onde Habitam">
           <span>Animais Fantásticos e Onde Habitam</span>
         </div>
       </a>
       <a href="#" id="filme-crimes-grindelwald">
         <div class="film">
-          <img src="img/filme-crimes-grindelwald.jpg" alt="Animais Fantásticos: Os Crimes de Grindelwald">
+          <img src="img/filme-crimes-grindelwald_11zon.webp" alt="Animais Fantásticos: Os Crimes de Grindelwald">
           <span>Animais Fantásticos: Os Crimes de Grindelwald</span>
         </div>
       </a>
       <a href="#" id="filme-segredos-dumbledore">
         <div class="film">
-          <img src="img/filme-segredos-dumbledore.jpg" alt="Animais Fantásticos: Os Segredos de Dumbledore">
+          <img src="img/filme-segredos-dumbledore_11zon.webp" alt="Animais Fantásticos: Os Segredos de Dumbledore">
           <span>Animais Fantásticos: Os Segredos de Dumbledore</span>
         </div>
       </a>
       <a href="#" id="filme-pedra-filosofal">
         <div class="film">
-          <img src="img/pedra-filosofal.jpg" alt="Harry Potter e a Pedra Filosofal">
+          <img src="img/pedra-filosofal_11zon.webp" alt="Harry Potter e a Pedra Filosofal">
           <span>Harry Potter e a Pedra Filosofal</span>
         </div>
       </a>
       <a href="#" id="filme-camera-secreta">
         <div class="film">
-          <img src="img/camera-secreta.jpg" alt="Harry Potter e a Câmara Secreta">
+          <img src="img/camera-secreta_11zon.webp" alt="Harry Potter e a Câmara Secreta">
           <span>Harry Potter e a Câmara Secreta</span>
         </div>
       </a>
       <a href="#" id="filme-prisioneiro-azkaban">
         <div class="film">
-          <img src="img/prisioneiro-azkaban.jpg" alt="Harry Potter e o Prisioneiro de Azkaban">
+          <img src="img/prisioneiro-azkaban_11zon.webp" alt="Harry Potter e o Prisioneiro de Azkaban">
           <span>Harry Potter e o Prisioneiro de Azkaban</span>
         </div>
       </a>
       <a href="#" id="filme-calice-fogo">
         <div class="film">
-          <img src="img/calice-fogo.jpg" alt="Harry Potter e o Cálice de Fogo">
+          <img src="img/calice-fogo_11zon.webp" alt="Harry Potter e o Cálice de Fogo">
           <span>Harry Potter e o Cálice de Fogo</span>
         </div>
       </a>
       <a href="#" id="filme-ordem-fenix">
         <div class="film">
-          <img src="img/ordem-fenix.jpg" alt="Harry Potter e a Ordem da Fênix">
+          <img src="img/ordem-fenix_11zon.webp" alt="Harry Potter e a Ordem da Fênix">
           <span>Harry Potter e a Ordem da Fênix</span>
         </div>
       </a>
       <a href="#" id="filme-enigma-principe">
         <div class="film">
-          <img src="img/enigma-principe.jpg" alt="Harry Potter e o Enigma do Príncipe">
+          <img src="img/enigma-principe_11zon.webp" alt="Harry Potter e o Enigma do Príncipe">
           <span>Harry Potter e o Enigma do Príncipe</span>
         </div>
       </a>
       <a href="#" id="filme-reliquias-morte-1">
         <div class="film">
-          <img src="img/reliquias-morte.jpg" alt="Harry Potter e as Relíquias da Morte - Parte 1 e Parte 2">
+          <img src="img/reliquias-morte_11zon.webp" alt="Harry Potter e as Relíquias da Morte - Parte 1 e Parte 2">
           <span>Harry Potter e as Relíquias da Morte - Parte 1</span>
         </div>
       </a>
       <a href="#" id="filme-reliquias-morte-2">
         <div class="film">
-          <img src="img/reliquias-morte.jpg" alt="Harry Potter e as Relíquias da Morte - Parte 1 e Parte 2">
+          <img src="img/reliquias-morte_11zon.webp" alt="Harry Potter e as Relíquias da Morte - Parte 1 e Parte 2">
           <span>Harry Potter e as Relíquias da Morte - Parte 2</span>
         </div>
       </a>
       <a href="#" id="documentario-volta-hogwarts">
         <div class="film">
-          <img src="img/volta-hogwarts.jpg" alt="Harry Potter e as Relíquias da Morte - Parte 1 e Parte 2">
+          <img src="img/volta-hogwarts_11zon.webp" alt="Harry Potter e as Relíquias da Morte - Parte 1 e Parte 2">
           <span>Comemoração de 20 Anos de Harry Potter: De Volta A Hogwarts</span>
         </div>
       </a>
@@ -621,7 +652,8 @@
         <a href="#" class="modal-close" id="modalclose-filme-onde-habitam">&times;</a>
         <h1>Animais Fantásticos e Onde Habitam</h1>
         <h2>Sinopse:</h2>
-        <p>"Animais Fantásticos e Onde Habitam" é um filme que se passa no universo mágico de Harry Potter. A história
+        <p class="recuo">"Animais Fantásticos e Onde Habitam" é um filme que se passa no universo mágico de Harry
+          Potter. A história
           se passa em 1926, quando o excêntrico magizoologista Newt Scamander chega a Nova York com sua mala repleta de
           criaturas mágicas. Porém, algumas dessas criaturas acabam escapando e causando problemas na cidade. Enquanto
           tenta recapturá-las, Newt se envolve em uma trama perigosa que ameaça a comunidade bruxa e coloca em risco a
@@ -643,7 +675,8 @@
         <a href="#" class="modal-close" id="modalclose-crimes-grindelwald">&times;</a>
         <h1>Animais Fantásticos: Os Crimes de Grindelwald</h1>
         <h2>Sinopse:</h2>
-        <p>Na sequência de "Animais Fantásticos e Onde Habitam", o bruxo das trevas Gellert Grindelwald escapa da
+        <p class="recuo">Na sequência de "Animais Fantásticos e Onde Habitam", o bruxo das trevas Gellert Grindelwald
+          escapa da
           custódia e começa a reunir seguidores para sua causa: elevar os bruxos de sangue puro para governar sobre
           todas as criaturas não mágicas. Em um esforço para frustrar os planos de Grindelwald, o professor Alvo
           Dumbledore recruta seu ex-aluno Newt Scamander. Enquanto o perigo aumenta, o amor e a lealdade são testados,
@@ -663,7 +696,8 @@
         <a href="#" class="modal-close" id="modalclose-segredos-dumbledore">&times;</a>
         <h1>Animais Fantásticos: Os Segredos de Dumbledore</h1>
         <h2>Sinopse:</h2>
-        <p>No terceiro filme da franquia "Animais Fantásticos", Newt Scamander e seus amigos retornam para enfrentar
+        <p class="recuo">No terceiro filme da franquia "Animais Fantásticos", Newt Scamander e seus amigos retornam para
+          enfrentar
           novos desafios em meio ao mundo bruxo. O bruxo das trevas Gellert Grindelwald está cada vez mais poderoso e
           perigoso, e cabe a Newt e seus aliados descobrir os segredos sombrios que envolvem Dumbledore e lutar contra
           as ameaças que se aproximam.</p>
@@ -681,7 +715,8 @@
         <a href="#" class="modal-close" id="modalclose-pedra-filosofal">&times;</a>
         <h1>Harry Potter e a Pedra Filosofal</h1>
         <h2>Sinopse:</h2>
-        <p>Harry Potter é um garoto órfão que vive infeliz com seus tios adotivos. Porém, aos 11 anos, ele descobre ser
+        <p class="recuo">Harry Potter é um garoto órfão que vive infeliz com seus tios adotivos. Porém, aos 11 anos, ele
+          descobre ser
           um bruxo e recebe um convite para estudar na Escola de Magia e Bruxaria de Hogwarts. Lá, ele faz novos amigos
           e descobre segredos sobre o seu passado e o mundo da magia.</p>
         <h2>Trailer:</h2>
@@ -699,7 +734,8 @@
         <a href="#" class="modal-close" id="modalclose-camera-secreta">&times;</a>
         <h1>Harry Potter e a Câmara Secreta</h1>
         <h2>Sinopse:</h2>
-        <p>Segundo ano na Escola de Magia e Bruxaria de Hogwarts, Harry Potter descobre que a Câmara Secreta foi aberta
+        <p class="recuo">Segundo ano na Escola de Magia e Bruxaria de Hogwarts, Harry Potter descobre que a Câmara
+          Secreta foi aberta
           e que algo terrível está ameaçando os estudantes. Junto com seus amigos Ron e Hermione, Harry precisa
           desvendar o mistério por trás da Câmara Secreta e impedir que mais pessoas sejam prejudicadas.</p>
         <h2>Trailer:</h2>
@@ -717,7 +753,8 @@
         <a href="#" class="modal-close" id="modalclose-prisioneiro-azkaban">&times;</a>
         <h1>Harry Potter e o Prisioneiro de Azkaban</h1>
         <h2>Sinopse:</h2>
-        <p>No terceiro ano em Hogwarts, Harry Potter e seus amigos Ron e Hermione enfrentam um novo desafio: um
+        <p class="recuo">No terceiro ano em Hogwarts, Harry Potter e seus amigos Ron e Hermione enfrentam um novo
+          desafio: um
           assassino perigoso, Sirius Black, escapou da prisão de Azkaban e está em busca de Harry. Enquanto tentam
           descobrir a verdade por trás dos acontecimentos, eles também aprendem sobre os Dementadores e o poder da
           amizade.</p>
@@ -736,7 +773,8 @@
         <a href="#" class="modal-close" id="modalclose-calice-fogo">&times;</a>
         <h1>Harry Potter e o Cálice de Fogo</h1>
         <h2>Sinopse:</h2>
-        <p>No quarto ano em Hogwarts, Harry Potter é selecionado como um dos competidores do Torneio Tribruxo, uma
+        <p class="recuo">No quarto ano em Hogwarts, Harry Potter é selecionado como um dos competidores do Torneio
+          Tribruxo, uma
           competição perigosa entre as três grandes escolas de magia. Enquanto enfrenta desafios mortais, Harry também
           descobre segredos sombrios sobre a história de Voldemort e o renascimento de seu poder.</p>
         <h2>Trailer:</h2>
@@ -754,7 +792,8 @@
         <a href="#" class="modal-close" id="modalclose-ordem-fenix">&times;</a>
         <h1>Harry Potter e a Ordem da Fênix</h1>
         <h2>Sinopse:</h2>
-        <p>No quinto ano em Hogwarts, Harry Potter enfrenta desafios e mudanças significativas. Ele lida com a negação
+        <p class="recuo">No quinto ano em Hogwarts, Harry Potter enfrenta desafios e mudanças significativas. Ele lida
+          com a negação
           do Ministério da Magia sobre o retorno de Lord Voldemort, enquanto se junta à Ordem da Fênix para lutar contra
           as forças das trevas que ameaçam a segurança de todos.</p>
         <h2>Trailer:</h2>
@@ -772,7 +811,8 @@
         <a href="#" class="modal-close" id="modalclose-enigma-principe">&times;</a>
         <h1>Harry Potter e o Enigma do Príncipe</h1>
         <h2>Sinopse:</h2>
-        <p>No sexto ano em Hogwarts, Harry Potter descobre um livro antigo e misterioso, conhecido como "O Enigma do
+        <p class="recuo">No sexto ano em Hogwarts, Harry Potter descobre um livro antigo e misterioso, conhecido como "O
+          Enigma do
           Príncipe", que contém segredos sobre poções e feitiços. Enquanto investiga o passado de Voldemort, Harry
           enfrenta desafios pessoais e lida com os crescentes perigos que ameaçam o mundo bruxo.</p>
         <h2>Trailer:</h2>
@@ -790,7 +830,8 @@
         <a href="#" class="modal-close" id="modalclose-reliquias-morte-1">&times;</a>
         <h1>Harry Potter e as Relíquias da Morte Parte 1</h1>
         <h2>Sinopse:</h2>
-        <p>"Harry Potter e as Relíquias da Morte - Parte 1" é o penúltimo capítulo da épica saga do bruxo mais famoso do
+        <p class="recuo">"Harry Potter e as Relíquias da Morte - Parte 1" é o penúltimo capítulo da épica saga do bruxo
+          mais famoso do
           mundo. Após a morte de Dumbledore, Harry, Ron e Hermione partem em uma perigosa missão para destruir as
           horcruxes de Voldemort e impedir que o mal se espalhe pelo mundo dos bruxos. Em uma jornada repleta de perdas,
           descobertas e traições, eles enfrentam o medo e a escuridão enquanto lutam para manter a esperança viva e
@@ -810,7 +851,7 @@
         <a href="#" class="modal-close" id="modalclose-reliquias-morte-2">&times;</a>
         <h1>Harry Potter e as Relíquias da Morte Parte 2</h1>
         <h2>Sinopse:</h2>
-        <p>
+        <p class="recuo">
           "Harry Potter e as Relíquias da Morte - Parte 2" marca o emocionante desfecho da aclamada série Harry Potter.
           Enquanto a batalha final entre o bem e o mal se intensifica, Harry, Ron e Hermione se unem aos seus amigos e
           aliados para enfrentar Voldemort e suas forças das trevas. Em Hogwarts, o trio enfrenta desafios mortais,
@@ -832,7 +873,7 @@
         <a href="#" class="modal-close" id="modalclose-documentario-volta-hogwarts">&times;</a>
         <h1>De Volta a Hogwarts</h1>
         <h2>Sinopse:</h2>
-        <p>
+        <p class="recuo">
           "De Volta a Hogwarts" é um documentário fascinante que nos leva aos bastidores do icônico universo de Harry
           Potter. Através de imagens exclusivas e entrevistas com o elenco original, acompanhamos a preparação e a
           emocionante reunião dos atores para a peça teatral "Harry Potter e a Criança Amaldiçoada". Revivendo memórias
@@ -869,9 +910,10 @@
     </div>
     <div class="conteudo">
       <div class="images">
-        <img src="img/serie-harry-potter.jpg" alt="hogwarts">
+        <img src="img/serie-harry-potter_11zon.webp" alt="hogwarts">
       </div>
-      <p>A Warner Bros. Discovery confirmou que lançará uma série de Harry Potter no novo streaming Max, com J.K.
+      <p class="recuo">A Warner Bros. Discovery confirmou que lançará uma série de Harry Potter no novo streaming Max,
+        com J.K.
         Rowling como produtora executiva. A série será baseada nos sete livros da saga e terá um novo elenco para
         atrair uma nova geração de fãs. A produção está prevista para durar uma década e cada temporada será fiel aos
         livros originais. O orçamento será semelhante ou maior do que Game of Thrones e House of the Dragon. A editora
@@ -909,217 +951,217 @@
     </div>
     <div class="actors-grid">
       <div class="card">
-        <div class="card-front">
-          <img src="img/Daniel.jpg" alt="Daniel Radcliffe">
+        <div class="card-front ">
+          <img src="img/Daniel_11zon.webp" alt="Daniel Radcliffe">
           <p class="title">Daniel Radcliffe</p>
           <p class="subtitle"></p>
         </div>
         <div class="card-back">
-          <img src="img/Harry.jpg" alt="Harry Potter">
+          <img src="img/Harry_11zon.webp" alt="Harry Potter">
           <p class="title">Harry Potter</p>
           <p class="subtitle"></p>
         </div>
       </div>
       <div class="card">
         <div class="card-front">
-          <img src="img/Emma.jpg" alt="Emma Watson">
+          <img src="img/Emma_11zon.webp" alt="Emma Watson">
           <p class="title">Emma Watson</p>
           <p class="subtitle"></p>
         </div>
         <div class="card-back">
-          <img src="img/Hermione.jpg" alt="Hermione Granger">
+          <img src="img/Hermione_11zon.webp" alt="Hermione Granger">
           <p class="title">Hermione Granger</p>
           <p class="subtitle"></p>
         </div>
       </div>
       <div class="card">
         <div class="card-front">
-          <img src="img/Rupert.jpg" alt="Rupert Grint">
+          <img src="img/Rupert_11zon.webp" alt="Rupert Grint">
           <p class="title">Rupert Grint</p>
           <p class="subtitle"></p>
         </div>
         <div class="card-back">
-          <img src="img/Weasley.jpg" alt="Ron Weasley">
+          <img src="img/Weasley_11zon.webp" alt="Ron Weasley">
           <p class="title">Ron Weasley</p>
           <p class="subtitle"></p>
         </div>
       </div>
       <div class="card">
         <div class="card-front">
-          <img src="img/Richard_Harris.jpg" alt="Richard Harris">
+          <img src="img/Richard_Harris_11zon.webp" alt="Richard Harris">
           <p class="title">Richard Harris</p>
           <p class="subtitle"></p>
         </div>
         <div class="card-back">
-          <img src="img/dumbledore1.jpg" alt="Alvo Dumbledore">
+          <img src="img/newt_11zon.webp" alt="Alvo Dumbledore">
           <p class="title">Alvo Dumbledore</p>
           <p class="subtitle"></p>
         </div>
       </div>
       <div class="card">
         <div class="card-front">
-          <img src="img/Michael.jpg" alt="Michael Gambon">
+          <img src="img/Michael_11zon.webp" alt="Michael Gambon">
           <p class="title">Michael Gam</p>
           <p class="subtitle"></p>
         </div>
         <div class="card-back">
-          <img src="img/dumbledore2.jpg" alt="Alvo Dumbledore">
+          <img src="img/dumbledore2_11zon.webp" alt="Alvo Dumbledore">
           <p class="title">Alvo Dumbledore</p>
           <p class="subtitle"></p>
         </div>
       </div>
       <div class="card">
         <div class="card-front">
-          <img src="img/Ralph.jpg" alt="Ralph Fiennes">
+          <img src="img/voldemort_11zon.webp" alt="Ralph Fiennes">
           <p class="title">Ralph Fiennes</p>
           <p class="subtitle"></p>
         </div>
         <div class="card-back">
-          <img src="img/voldemort.jpg" alt="Lord Valdermort">
+          <img src="img/voldemort_11zon.webp" alt="Lord Valdermort">
           <p class="title">Lord Valdermort</p>
           <p class="subtitle"></p>
         </div>
       </div>
       <div class="card">
         <div class="card-front">
-          <img src="img/Eddie.jpg" alt="Eddie Redmayane">
+          <img src="img/Eddie_11zon.webp" alt="Eddie Redmayane">
           <p class="title">Eddie Redmayane</p>
           <p class="subtitle"></p>
         </div>
         <div class="card-back">
-          <img src="img/newt.jpg" alt="Newt Scamander">
+          <img src="img/newt_11zon.webp" alt="Newt Scamander">
           <p class="title">Newt Scamander</p>
           <p class="subtitle"></p>
         </div>
       </div>
       <div class="card">
         <div class="card-front">
-          <img src="img/Eddie.jpg" alt="Eddie Redmayane">
+          <img src="img/Eddie_11zon.webp" alt="Eddie Redmayane">
           <p class="title">Eddie Redmayane</p>
           <p class="subtitle"></p>
         </div>
         <div class="card-back">
-          <img src="img/newt.jpg" alt="Newt Scamander">
+          <img src="img/newt_11zon.webp" alt="Newt Scamander">
           <p class="title">Newt Scamander</p>
           <p class="subtitle"></p>
         </div>
       </div>
       <div class="card">
         <div class="card-front">
-          <img src="img/Eddie.jpg" alt="Eddie Redmayane">
+          <img src="img/Eddie_11zon.webp" alt="Eddie Redmayane">
           <p class="title">Eddie Redmayane</p>
           <p class="subtitle"></p>
         </div>
         <div class="card-back">
-          <img src="img/newt.jpg" alt="Newt Scamander">
+          <img src="img/newt_11zon.webp" alt="Newt Scamander">
           <p class="title">Newt Scamander</p>
           <p class="subtitle"></p>
         </div>
       </div>
       <div class="card">
         <div class="card-front">
-          <img src="img/Eddie.jpg" alt="Eddie Redmayane">
+          <img src="img/Eddie_11zon.webp" alt="Eddie Redmayane">
           <p class="title">Eddie Redmayane</p>
           <p class="subtitle"></p>
         </div>
         <div class="card-back">
-          <img src="img/newt.jpg" alt="Newt Scamander">
+          <img src="img/newt_11zon.webp" alt="Newt Scamander">
           <p class="title">Newt Scamander</p>
           <p class="subtitle"></p>
         </div>
       </div>
       <div class="card">
         <div class="card-front">
-          <img src="img/Eddie.jpg" alt="Eddie Redmayane">
+          <img src="img/Eddie_11zon.webp" alt="Eddie Redmayane">
           <p class="title">Eddie Redmayane</p>
           <p class="subtitle"></p>
         </div>
         <div class="card-back">
-          <img src="img/newt.jpg" alt="Newt Scamander">
+          <img src="img/newt_11zon.webp" alt="Newt Scamander">
           <p class="title">Newt Scamander</p>
           <p class="subtitle"></p>
         </div>
       </div>
       <div class="card">
         <div class="card-front">
-          <img src="img/Eddie.jpg" alt="Eddie Redmayane">
+          <img src="img/Eddie_11zon.webp" alt="Eddie Redmayane">
           <p class="title">Eddie Redmayane</p>
           <p class="subtitle"></p>
         </div>
         <div class="card-back">
-          <img src="img/newt.jpg" alt="Newt Scamander">
+          <img src="img/newt_11zon.webp" alt="Newt Scamander">
           <p class="title">Newt Scamander</p>
           <p class="subtitle"></p>
         </div>
       </div>
       <div class="card">
         <div class="card-front">
-          <img src="img/Eddie.jpg" alt="Eddie Redmayane">
+          <img src="img/Eddie_11zon.webp" alt="Eddie Redmayane">
           <p class="title">Eddie Redmayane</p>
           <p class="subtitle"></p>
         </div>
         <div class="card-back">
-          <img src="img/newt.jpg" alt="Newt Scamander">
+          <img src="img/newt_11zon.webp" alt="Newt Scamander">
           <p class="title">Newt Scamander</p>
           <p class="subtitle"></p>
         </div>
       </div>
       <div class="card">
         <div class="card-front">
-          <img src="img/Eddie.jpg" alt="Eddie Redmayane">
+          <img src="img/Eddie_11zon.webp" alt="Eddie Redmayane">
           <p class="title">Eddie Redmayane</p>
           <p class="subtitle"></p>
         </div>
         <div class="card-back">
-          <img src="img/newt.jpg" alt="Newt Scamander">
+          <img src="img/newt_11zon.webp" alt="Newt Scamander">
           <p class="title">Newt Scamander</p>
           <p class="subtitle"></p>
         </div>
       </div>
       <div class="card">
         <div class="card-front">
-          <img src="img/Eddie.jpg" alt="Eddie Redmayane">
+          <img src="img/Eddie_11zon.webp" alt="Eddie Redmayane">
           <p class="title">Eddie Redmayane</p>
           <p class="subtitle"></p>
         </div>
         <div class="card-back">
-          <img src="img/newt.jpg" alt="Newt Scamander">
+          <img src="img/newt_11zon.webp" alt="Newt Scamander">
           <p class="title">Newt Scamander</p>
           <p class="subtitle"></p>
         </div>
       </div>
       <div class="card">
         <div class="card-front">
-          <img src="img/Eddie.jpg" alt="Eddie Redmayane">
+          <img src="img/Eddie_11zon.webp" alt="Eddie Redmayane">
           <p class="title">Eddie Redmayane</p>
           <p class="subtitle"></p>
         </div>
         <div class="card-back">
-          <img src="img/newt.jpg" alt="Newt Scamander">
+          <img src="img/newt_11zon.webp" alt="Newt Scamander">
           <p class="title">Newt Scamander</p>
           <p class="subtitle"></p>
         </div>
       </div>
       <div class="card">
         <div class="card-front">
-          <img src="img/Eddie.jpg" alt="Eddie Redmayane">
+          <img src="img/Eddie_11zon.webp" alt="Eddie Redmayane">
           <p class="title">Eddie Redmayane</p>
           <p class="subtitle"></p>
         </div>
         <div class="card-back">
-          <img src="img/newt.jpg" alt="Newt Scamander">
+          <img src="img/newt_11zon.webp" alt="Newt Scamander">
           <p class="title">Newt Scamander</p>
           <p class="subtitle"></p>
         </div>
       </div>
       <div class="card">
         <div class="card-front">
-          <img src="img/Eddie.jpg" alt="Eddie Redmayane">
+          <img src="img/Eddie_11zon.webp" alt="Eddie Redmayane">
           <p class="title">Eddie Redmayane</p>
           <p class="subtitle"></p>
         </div>
         <div class="card-back">
-          <img src="img/newt.jpg" alt="Newt Scamander">
+          <img src="img/newt_11zon.webp" alt="Newt Scamander">
           <p class="title">Newt Scamander</p>
           <p class="subtitle"></p>
         </div>
@@ -1143,7 +1185,8 @@
       </div>
     </div>
     <div class="conteudo">
-      <p>De 2001 a 2010, uma série de jogos foi lançada como adaptação dos filmes da saga Harry Potter. Esses jogos
+      <p class="recuo">De 2001 a 2010, uma série de jogos foi lançada como adaptação dos filmes da saga Harry Potter.
+        Esses jogos
         permitiram que os fãs explorassem o mundo mágico de Harry Potter, participando de aulas em Hogwarts,
         enfrentando desafios e revivendo momentos-chave dos filmes. Cada jogo acompanhava a progressão dos
         livros/filmes, apresentando elementos como exploração, quebra-cabeças, batalhas mágicas e interação com
@@ -1157,9 +1200,10 @@
         <h1>Hogwarts Legacy</h1>
       </div>
       <div class="images">
-        <img src="img/serie-harry-potter.jpg" alt="hogwarts">
+        <img src="img/serie-harry-potter_11zon.webp" alt="hogwarts">
       </div>
-      <p>A Warner Bros. Discovery confirmou que lançará uma série de Harry Potter no novo streaming Max, com J.K.
+      <p class="recuo">A Warner Bros. Discovery confirmou que lançará uma série de Harry Potter no novo streaming Max,
+        com J.K.
         Rowling como produtora executiva. A série será baseada nos sete livros da saga e terá um novo elenco para
         atrair uma nova geração de fãs. A produção está prevista para durar uma década e cada temporada será fiel aos
         livros originais. O orçamento será semelhante ou maior do que Game of Thrones e House of the Dragon. A editora
@@ -1182,9 +1226,10 @@
         <h1>Hogwarts Legacy</h1>
       </div>
       <div class="images">
-        <img src="img/serie-harry-potter.jpg" alt="hogwarts">
+        <img src="img/serie-harry-potter_11zon.webp" alt="hogwarts">
       </div>
-      <p>A Warner Bros. Discovery confirmou que lançará uma série de Harry Potter no novo streaming Max, com J.K.
+      <p class="recuo">A Warner Bros. Discovery confirmou que lançará uma série de Harry Potter no novo streaming Max,
+        com J.K.
         Rowling como produtora executiva. A série será baseada nos sete livros da saga e terá um novo elenco para
         atrair uma nova geração de fãs. A produção está prevista para durar uma década e cada temporada será fiel aos
         livros originais. O orçamento será semelhante ou maior do que Game of Thrones e House of the Dragon. A editora
@@ -1207,9 +1252,10 @@
         <h1>Hogwarts Legacy</h1>
       </div>
       <div class="images">
-        <img src="img/serie-harry-potter.jpg" alt="hogwarts">
+        <img src="img/serie-harry-potter_11zon.webp" alt="hogwarts">
       </div>
-      <p>A Warner Bros. Discovery confirmou que lançará uma série de Harry Potter no novo streaming Max, com J.K.
+      <p class="recuo">A Warner Bros. Discovery confirmou que lançará uma série de Harry Potter no novo streaming Max,
+        com J.K.
         Rowling como produtora executiva. A série será baseada nos sete livros da saga e terá um novo elenco para
         atrair uma nova geração de fãs. A produção está prevista para durar uma década e cada temporada será fiel aos
         livros originais. O orçamento será semelhante ou maior do que Game of Thrones e House of the Dragon. A editora
@@ -1232,9 +1278,10 @@
         <h1>Hogwarts Legacy</h1>
       </div>
       <div class="images">
-        <img src="img/serie-harry-potter.jpg" alt="hogwarts">
+        <img src="img/serie-harry-potter_11zon.webp" alt="hogwarts">
       </div>
-      <p>A Warner Bros. Discovery confirmou que lançará uma série de Harry Potter no novo streaming Max, com J.K.
+      <p class="recuo">A Warner Bros. Discovery confirmou que lançará uma série de Harry Potter no novo streaming Max,
+        com J.K.
         Rowling como produtora executiva. A série será baseada nos sete livros da saga e terá um novo elenco para
         atrair uma nova geração de fãs. A produção está prevista para durar uma década e cada temporada será fiel aos
         livros originais. O orçamento será semelhante ou maior do que Game of Thrones e House of the Dragon. A editora

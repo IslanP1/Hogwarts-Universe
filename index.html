@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -1002,8 +1002,8 @@
           <p class="subtitle"></p>
         </div>
         <div class="card-back">
-          <img src="img/dumbledore1_11zon (1).webp" alt="Alvo Dumbledore">
-          <p class="title">Alvo Dumbledore</p>
+          <img src="img/dumbledore1_11zon (1).webp" alt="Albus Dumbledore">
+          <p class="title">Albus Dumbledore</p>
           <p class="subtitle"></p>
         </div>
       </div>
@@ -1014,8 +1014,8 @@
           <p class="subtitle"></p>
         </div>
         <div class="card-back">
-          <img src="img/dumbledore2_11zon.webp" alt="Alvo Dumbledore">
-          <p class="title">Alvo Dumbledore</p>
+          <img src="img/dumbledore2_11zon.webp" alt="Albus Dumbledore">
+          <p class="title">Albus Dumbledore</p>
           <p class="subtitle"></p>
         </div>
       </div>
@@ -1134,8 +1134,8 @@
           <p class="subtitle"></p>
         </div>
         <div class="card-back">
-          <img src="img/Gellert Grindelwald.webp" alt="Newt Scamander">
-          <p class="title">Newt Scamander</p>
+          <img src="img/Gellert Grindelwald.webp" alt="Gellert Grindelwald">
+          <p class="title">Gellert Grindelwald</p>
           <p class="subtitle"></p>
         </div>
       </div>
@@ -1183,7 +1183,7 @@
       </div>
       <div class="titulo-separador">
         <h1 class="digitar">Jogos</h1>
-        <div class="separadores">
+        <div class="separadores" style="padding-top: .3rem;">
           <span></span>
           <span></span>
           <span></span>
@@ -1369,17 +1369,17 @@
         <img src="img/magica.png" alt="figura de magia">
       </div>
     </div>
-    <form action="">
+    <form action="https://api.staticforms.xyz/submit" method="post">
       <div class="column1">
         <label for="">Mensagem</label>
-        <textarea id="campo-grande" rows="8%" cols="50"></textarea>
+        <textarea id="campo-grande" name="message" rows="8%" cols="50" placeholder="Digite sua mensagem" autocomplete="off" required></textarea>
       </div>
       <div class="column2">
         <label for="">Nome</label>
-        <input type="text">
+        <input type="text" name="name" placeholder="Digite seu nome..." autocomplete="off" required>
         <label for="">E-mail</label>
-        <input type="email">
-        <button>Enviar
+        <input type="text" name="email" placeholder="Digite seu e-mail" autocomplete="off" required>
+        <button type="submit">Enviar
           <div class="star-1">
             <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
               style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
@@ -1459,6 +1459,8 @@
             </svg>
           </div>
         </button>
+        <input type="hidden" name="accessKey" value="b7f61c86-f673-4857-b2e3-86ee7511053f">
+        <input type="hidden" name="redirectTo" value="https://hogwarts-universe.netlify.app/#contatcs">
       </div>
     </form>
   </article>

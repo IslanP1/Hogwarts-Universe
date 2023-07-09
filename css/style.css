@@ -941,6 +941,8 @@ h3 {
 
 /* form-article */
 .form {
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-primary);
     padding-bottom: 4rem;
 }
@@ -948,7 +950,7 @@ h3 {
 .form form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 70%;
+    max-width: 80%;
     margin: auto;
     gap: 3rem;
 }

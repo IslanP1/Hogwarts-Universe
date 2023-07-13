@@ -204,14 +204,15 @@ header li a:hover::after {
     display: flex;
     flex-direction: column;
     max-width: 60%;
-    margin: auto 2rem;
+    margin: auto;
 }
 
 .trailer h2 {
     text-align: left;
     color: var(--color-red-secondary);
-    font-family: cursive;
+    font-family: 'poppins';
     margin-bottom: 1rem;
+    font-weight: 8000;
 }
 
 .trailer img {
@@ -283,6 +284,7 @@ header li a:hover::after {
     border-radius: 10px;
     cursor: pointer;
     object-fit: cover;
+    margin-bottom: 1rem;
 }
 
 .conteudo img:hover {
@@ -293,11 +295,11 @@ header li a:hover::after {
 .conteudo p {
     color: var(--color-blank);
     justify-self: center;
-    margin: 0 2rem;
     font-family: 'poppins';
     color: var(--color-gray);
     text-align: left;
     font-size: 1.3rem;
+    margin-bottom: 2rem;
 }
 
 .titulos-secundarios {
@@ -307,6 +309,7 @@ header li a:hover::after {
     color: var(--color-red-secondary);
     font-family: 'Berkshire Swash', cursive;
     font-size: 1.3rem;
+    margin-bottom: 1rem;
 }
 
 /* History section */
@@ -316,6 +319,10 @@ header li a:hover::after {
     scroll-margin-top: 4rem;
 }
 
+.conteudo {
+    display: block;
+}
+
 .conteudo .houses {
     display: flex;
 }
@@ -323,7 +330,7 @@ header li a:hover::after {
 .conteudo .houses img {
     top: 10rem;
     position: sticky;
-    width: 40%;
+    width: auto;
     height: 40%;
     object-fit: cover;
 }
@@ -333,21 +340,18 @@ header li a:hover::after {
     height: 50%;
     align-items: center;
     object-fit: cover;
-    margin-bottom: 3rem;
 }
 
 .conteudo .professores img {
     width: 60%;
     height: 50%;
     object-fit: cover;
-    margin-bottom: 3rem;
 }
 
 .conteudo .criaturas-magicas img {
     width: 60%;
     height: 50%;
     object-fit: cover;
-    margin-bottom: 3rem;
 }
 
 
@@ -784,7 +788,6 @@ h3 {
     content: "";
     display: block;
     width: 15%;
-    border-radius: 50%;
     height: 2px;
     margin: 2px auto;
     background-color: var(--color-red-primary);
@@ -812,7 +815,10 @@ h3 {
 }
 
 .button {
-    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 2rem;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -939,6 +945,8 @@ h3 {
     scroll-margin-top: 4rem;
 }
 
+
+
 /* form-article */
 .form {
     display: flex;
@@ -958,6 +966,10 @@ h3 {
 .form .column1 {
     display: flex;
     flex-direction: column;
+}
+
+.form .column1 textarea{
+    width: 100%;
 }
 
 .column1 label {
@@ -1209,7 +1221,7 @@ h3 {
 
     #titulo {
         font-family: 'Berkshire Swash', cursive;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         width: 90%;
     }
 
@@ -1354,8 +1366,9 @@ h3 {
     }
 
     .button {
-        margin: 0;
+        margin: auto;
         width: 100%;
+        margin-top: 1rem;
     }
 
 
@@ -1424,7 +1437,7 @@ h3 {
 
     #titulo {
         font-family: 'Berkshire Swash', cursive;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         width: 90%;
     }
 
@@ -1585,8 +1598,9 @@ h3 {
     }
 
     .button {
-        margin: 0;
+        margin: auto;
         width: 60%;
+        margin-top: 1rem;
     }
 
     /* form-article */
@@ -1812,8 +1826,9 @@ h3 {
     }
 
     .button {
-        margin: 0;
+        margin: auto;
         width: 60%;
+        margin-top: 1rem;
     }
 
     /* form-article */
@@ -1971,8 +1986,9 @@ h3 {
     }
 
     .button {
-        margin: 0 2rem;
+        margin: auto;
         width: 50%;
+        margin-top: 1rem;
     }
 
     /* form-article */

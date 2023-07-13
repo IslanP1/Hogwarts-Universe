@@ -266,8 +266,7 @@ header li a:hover::after {
 }
 
 .conteudo {
-    display: flex;
-    flex-direction: column;
+    display: block;
     max-width: 70%;
     margin: auto;
     padding-bottom: 3rem;
@@ -281,7 +280,7 @@ header li a:hover::after {
 
 .conteudo img {
     width: 60%;
-    border-radius: 10px;
+    border-radius: .5rem;
     cursor: pointer;
     object-fit: cover;
     margin-bottom: 1rem;
@@ -294,7 +293,6 @@ header li a:hover::after {
 
 .conteudo p {
     color: var(--color-blank);
-    justify-self: center;
     font-family: 'poppins';
     color: var(--color-gray);
     text-align: left;
@@ -319,16 +317,13 @@ header li a:hover::after {
     scroll-margin-top: 4rem;
 }
 
-.conteudo {
-    display: block;
-}
-
 .conteudo .houses {
     display: flex;
+    gap: 1rem;
 }
 
 .conteudo .houses img {
-    top: 10rem;
+    top: 5rem;
     position: sticky;
     width: auto;
     height: 40%;
@@ -338,7 +333,6 @@ header li a:hover::after {
 .conteudo .chapeu-seletor img {
     width: 60%;
     height: 50%;
-    align-items: center;
     object-fit: cover;
 }
 
@@ -1290,25 +1284,21 @@ h3 {
         top: 0rem;
         width: 80%;
         margin: auto;
-        margin-bottom: 2rem;
     }
 
     .conteudo .chapeu-seletor img {
         width: 100%;
         margin: auto;
-        margin-bottom: 2rem;
     }
 
     .conteudo .professores img {
         width: 100%;
         margin: auto;
-        margin-bottom: 2rem;
     }
 
     .conteudo .criaturas-magicas img {
         width: 100%;
         margin: auto;
-        margin-bottom: 2rem;
     }
 
     /* order section */
